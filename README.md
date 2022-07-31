@@ -15,7 +15,7 @@ The key stakeholder, Lily Moreno, or the director of marketing at Cyclistic, hyp
 The case study will focus on the first question for the data analysis.
 
 ### II. Business Task
-A business task is a question we want to answer through data analysis and make data-driven decisions for business strategies. In this scenario, the business task is to analyze Cyclistic's rider data from the previous 27 months to identify the difference between casual riders and annual members.
+A business task is a question we want to answer through data analysis and make data-driven decisions for business strategies. In this scenario, the business task is to analyze Cyclistic's rider data from the previous 12 months to identify the difference between casual riders and annual members.
 
 ### III. Data Source
 Cyclistic's historical trip data from the past 27 months is accessible [here](https://divvy-tripdata.s3.amazonaws.com/index.html). Note that this is a public, open dataset provided by Motivate International Inc. under the [Data License Agreement](https://ride.divvybikes.com/data-license-agreement). 
