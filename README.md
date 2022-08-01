@@ -125,6 +125,12 @@ A company with a good purpose will captivate more customers. Using Cyclistic's s
 
 ### VIII. Limitations and Next Steps
 
+As mentioned in *Section IV*, there were numerous missing values for station names and latitudes or longitudes. This could have potentially led to missing out on some significant information in the data. However, considering the fact that the stations and their corresponding latitudes or longitudes are almost fixed, we can possibly use the station names to fill in the missing latitudes or longitudes, and vice versa. This would need to be further investigated, but this would be a great way to improve the missing values during the data cleaning process. 
+
+On top of that, we can investigate what time the bikes were used by annual members during the weekdays. This can help us identify the potential purposes of annual members using bike-share, which would be beneficial in developing new marketing strategies for annual subscriptions. As an alternative, we can ask annual subscribers to opt in for a follow-up survey to ask about their preferences. Here, we have to make sure that we respect their privacy and consent in collecting their survey data. Moreover, choice of words for the survey questions should be careful enough to eliminate any bias that might arise in the answers.
+
+Finally, we can use SQL next time for cleaning and manipulating the data. This would potentially make the process faster since SQL tools are typically made for handling large databases. 
+
 ### IX. Appendix
 
 #### IX-i. Figure a: Proportion of Annual Members and Casual Riders
