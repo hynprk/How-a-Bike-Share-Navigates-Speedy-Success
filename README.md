@@ -6,7 +6,7 @@
 **Cyclistic** is a hypothetical bike-share company in Chicago founded in 2016, featuring 5,800 bicycles and 600 docking stations. To foster inclusivity for diverse groups of customers, Cyclistic not only offers conventional two-wheeled bicycles, but also hand tricycles, reclining bicycles, and cargo bicycles. According to Cyclistic's bike trip data, approximately 30% of the bike-share users use the bikes to commute to work. 
 
 <p align="center">
-  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/images/bikeshareinchicago.jpg">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/images/bikeshareinchicago.jpg">
   <a href="https://connect.bcbsil.com/health-and-wellness/b/weblog/posts/on-a-roll-bike-share-programs-expand-across-the-country">Image Source</a>
 </p>
 
@@ -135,7 +135,7 @@ According to Figure 1, we have seen that the proportion of annual members are gr
 A company with a good purpose will captivate more customers. Using Cyclistic's social media accounts and bike-share stations, we can promote the benefits of bike-share. The bike stations for advertising this campaign can be chosen based on the number of parks around stations, number of casual riders per station, or the top 10 start stations we have seen in Figure 4. The benefits of bike-share would majorly include protecting our planet by reducing gas emissions or less air pollution from cars and developing a healthier life style. Conjoining the two ideas, we can promote a campaign for saving the earth. This includes hosting an event of picking up trash on the streets while riding Cyclistic's bikes, or planting a tree for every certain number of posts with Cyclistic's bike-share on social media. During events, participants will be asked to fill out optional surveys regarding bike-share and the campaign, which would allow them to enter in raffles for environment-friendly prizes. This could potentially increase the number of new annual subscribers.
 
 <p align="center">
-  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/images/bike.png">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/images/bike.png">
 </p>
 
 
