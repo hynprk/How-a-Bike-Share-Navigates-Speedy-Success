@@ -5,6 +5,11 @@
 ### I-i. About the Company
 **Cyclistic** is a hypothetical bike-share company in Chicago founded in 2016, featuring 5,800 bicycles and 600 docking stations. To foster inclusivity for diverse groups of customers, Cyclistic not only offers conventional two-wheeled bicycles, but also hand tricycles, reclining bicycles, and cargo bicycles. According to Cyclistic's bike trip data, approximately 30% of the bike-share users use the bikes to commute to work. 
 
+<p align="center">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/images/bikeshareinchicago.jpg">
+  <a href="https://connect.bcbsil.com/health-and-wellness/b/weblog/posts/on-a-roll-bike-share-programs-expand-across-the-country">Image Source</a>
+</p>
+
 ### I-ii. Goal of the Design Marketing Strategy
 The key stakeholder, Lily Moreno, or the director of marketing at Cyclistic, hypothesizes that increasing the number of annual membership bike-share users will lead to a greater success of the company. Hence, the ultimate goal of the marketing team is to recommend new marketing strategies to convert casual riders into annual members by scrutinizing data insights with captivating data visualizations. The new marketing strategies will be developed based on the three questions below:
 
@@ -68,7 +73,9 @@ We notice that:
 
 Moving forward, we will take a look at the distribution of users per day of week, as shown in Figure 1.
 
-![Figure 1](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig1.jpeg)
+<p align="center">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig1.jpeg">
+</p>
 
 We observe that:
 
@@ -76,7 +83,9 @@ We observe that:
 * There are more casual riders over the weekends (Sat-Sun)
 * Saturday has the maximum number of bike-share users (i.e., mode), followed by Sunday
 
-![Figure 2](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig2.jpeg)
+<p align="center">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig2.jpeg">
+</p>
 
 Next, we can take a look at the rider distribution by month, from July 2021 to June 2022.
 
@@ -85,7 +94,9 @@ Next, we can take a look at the rider distribution by month, from July 2021 to J
 
 When comparing the types of bicycles used between casual users and annual members (See Figure 3), we see that both casual and annual riders use classic bikes more than electric bikes, although the difference between classic and electric bikes is subtle within the casual group. Also, it seems that docked bicycles are only offered for casual riders since there seems to be no docked bike users within annual members.
 
-![Figure 3](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig3.jpeg)
+<p align="center">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig3.jpeg">
+</p>
 
 Then, another data we want to take a look at is the Top 10 start stations used by all riders. According to Figure 4, Streeter Dr & Grand Ave has the highest number of users, where approximately 79% of them are casual riders. Having various sight seeing locations and a lot of parks nearby Streeter Dr & Grand Ave, such as Milton Lee Olive Park, Lake View Park, Maggie Daley Park, and Millennium Park could be the reason for this. 
 
@@ -93,7 +104,9 @@ Then, another data we want to take a look at is the Top 10 start stations used b
 
 Finally, we would like to present a dashboard we created. Below is a preview of the dashboard, and the interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1) (Right click to view in a new tab). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values. 
 
-![Dashboard Preview](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/dashboard.png)
+<p align="center">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/dashboard.png">
+</p>
 
 ### VI. Summary of Analysis
 
@@ -121,7 +134,10 @@ According to Figure 1, we have seen that the proportion of annual members are gr
 
 A company with a good purpose will captivate more customers. Using Cyclistic's social media accounts and bike-share stations, we can promote the benefits of bike-share. The bike stations for advertising this campaign can be chosen based on the number of parks around stations, number of casual riders per station, or the top 10 start stations we have seen in Figure 4. The benefits of bike-share would majorly include protecting our planet by reducing gas emissions or less air pollution from cars and developing a healthier life style. Conjoining the two ideas, we can promote a campaign for saving the earth. This includes hosting an event of picking up trash on the streets while riding Cyclistic's bikes, or planting a tree for every certain number of posts with Cyclistic's bike-share on social media. During events, participants will be asked to fill out optional surveys regarding bike-share and the campaign, which would allow them to enter in raffles for environment-friendly prizes. This could potentially increase the number of new annual subscribers.
 
-![bike](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/bike.png)
+<p align="center">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/images/bike.png">
+</p>
+
 
 ### VIII. Limitations and Next Steps
 
