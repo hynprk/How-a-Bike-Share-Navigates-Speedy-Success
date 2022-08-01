@@ -111,25 +111,21 @@ We have clearly seen from Figure 2 and the line graph from the dashboard that us
 
 Considering the fact that tourists increase during the summer and that there are various tourist attractions (e.g., parks, museums, universities, beaches, harbours) around the most popular start station, Streeter Dr & Grand Ave, we can offer summer coupons affiliated with such attractions as an alternative. Moreover, a digital map with various tourist attractions and bike stations nearby would help the potential bike users understand that these attractions can be visited with bicycles. This digital map can be accessible through Cyclistic's social media or QR codes at every station to decrease the amount of physical copies. Although tourists might have a lower chance of subscribing as an annual member, promoting such ideas would still increase the chance of them using Cyclistic's bikes, and hence increase the revenue of Cyclistic.
 
-#### VII-ii. Recommendation 2: You are the Lucky Winner!
+#### VII-ii. Recommendation 2: Weekend / Weekday Deals 🚴🏻👯🌤
 
+Since a lot of casual riders use bikes during the weekends, we can provide an exclusive weekend discount for the annual subscription if they subscribe instead of an one-time ride. We can also create an annual weekend package, which would be cheaper than the original annual subscription so that the users that only bike-share for the weekends would not feel overwhelmed with the usual annual subscription price. After they make the subscription, Cyclistic can offer them a chance to enter a raffle for prizes if they refer the annual subscription to their friends. That way, the company can reach a larger audience and attract more potential annual members. 
 
-annual subscription and follow-up survey -> draw
+According to Figure 1, we have seen that the proportion of annual members are greater than casual riders during the weekdays. This implies that they could be using it for work-related purposes, such as commuting. Hence, we can promote an annual weekday subscription that is cheaper than a typical annual payment for using public transportation. However, note that we would have to further investigate the specific time frames the bikes were used during the weekdays to ensure that our assumption is valid regarding work and commute.
 
+#### VII-iii. Recommendation 3: Campaign for Saving the Earth 🌍🌳🍃
 
-#### VII-iii. Recommendation 3: Promote
+A company with a good purpose will captivate more customers. Using Cyclistic's social media accounts and bike-share stations, we can promote the benefits of bike-share. The bike stations for advertising this campaign can be chosen based on the number of parks around stations, number of casual riders per station, or the top 10 start stations we have seen in Figure 4. The benefits of bike-share would majorly include protecting our planet by reducing gas emissions or less air pollution from cars and developing a healthier life style. Conjoining the two ideas, we can promote a campaign for saving the earth. This includes hosting an event of picking up trash on the streets while riding Cyclistic's bikes, or planting a tree for every certain number of posts with Cyclistic's bike-share on social media. During events, participants will be asked to fill out optional surveys regarding bike-share and the campaign, which would allow them to enter in raffles for environment-friendly prizes. This could potentially increase the number of new annual subscribers.
 
-promote campaign for preserving the environment around the top 10 stations
+### VIII. Limitations and Next Steps
 
-if tight on budget, only the stations with lots of casual riders
+### IX. Appendix
 
-discounts for weekday
-
-### Limitations of the Analysis
-
-### Appendix
-
-#### Figure a. Proportion of Annual Members and Casual Riders
+#### X. Figure a. Proportion of Annual Members and Casual Riders
 
 ![Figure a.](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/user_ratio.png)
 
