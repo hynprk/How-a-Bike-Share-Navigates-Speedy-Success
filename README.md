@@ -31,7 +31,7 @@ library(geosphere) # for distance
 library(knitr)     # for kable 
 ```
 
-After unzipping the data of twelve most recent months from [here](https://divvy-tripdata.s3.amazonaws.com/index.html), we aggregated them into one single dataframe and stored it into `bikeshare`. At this stage, we notice that there are several missing values, i.e., NA, within the aggregated data, as shown in Table 1 below. Missing values are not an issue for station names since we are not planning to incorporate specific station names into our analysis; however, missing latitudes and longitudes can rise problems when we calculate the total distance traveled per ride. Hence, we will omit the 5,374 rows from our analysis with missing end latitudes and longitudes.
+After unzipping the data of twelve most recent months from [here](https://divvy-tripdata.s3.amazonaws.com/index.html), we aggregated them into one single dataframe and stored it into `bikeshare`. At this stage, we notice that there are several missing values, i.e., NA, within the aggregated data, as shown in Table 1 below. Missing values can potentially raise issues when determining the most frequently used station names and calculating the total distance traveled per ride by using latitudes and longitudes. Hence, we will omit the 5,374 rows from our analysis with missing end latitudes and longitudes.
 
 
 Table 1: Missing Values for Each Column
@@ -83,7 +83,15 @@ Next, we can take a look at the rider distribution by month, from July 2021 to J
 * Number of users drastically decrease during winter (Dec-Feb) and the proportion of annual members relatively increase compared to casual users.
 * Number of users gradually start increasing in March, and peaks in summer and early fall (June-Sep) with the mode of month being July, followed by August. This could be due to the warm weather and vacation season. 
 
-Finally, we would like to present a dashboard we created. Below is a preview of the dashboard, and the interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values.
+When comparing the types of bicycles used between casual users and annual members (See Figure 3), we see that both casual and annual riders use classic bikes more than electric bikes, although the difference between classic and electric bikes is subtle within the casual group. Also, it seems that docked bicycles are only offered for casual riders since there seems to be no docked bike users within annual members.
+
+![Figure 3](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig3.jpeg)
+
+Then, another data we want to take a look at is the Top 10 start stations used by all riders. According to Figure 4, Streeter Dr Grand Ave has the highest number of users, where approximately 79% of them are casual riders.
+
+![Figure 4](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/station.png)
+
+Finally, we would like to present a dashboard we created. Below is a preview of the dashboard, and the interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1) (Right click to view in a new tab). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values. 
 
 ![Dashboard Preview](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/dashboard.png)
 
@@ -93,12 +101,23 @@ Finally, we would like to present a dashboard we created. Below is a preview of 
 * Annual members use bikes more during the weekdays.
 * On average, casual riders travel longer (time) and further (distance) than annual members.
 * Both casual and annual riders use classic bikes more than docked or electric bikes.
+* Streeter Dr Grand Ave has the highest number of users, where approximately 79% are casual riders.
 
 ### VII. Recommendations
 
 #### VII-i. Recommendation no.1
 
-follow-up survey
+annual subscription and follow-up survey -> draw
+
+promote with food coupons exclusive for summer
+
+offer exclusive discounts for weekends
+
+have certain numbers of casual bike share cost more than one annual purchase (can have risk)
+
+promote campaign for preserving the environment around the top 10 stations
+
+if tight on budget, only the stations with lots of casual riders
 
 #### VII-ii. Recommendation no.2
 
@@ -106,7 +125,11 @@ follow-up survey
 
 ### Limitations of the Analysis
 
+### Appendix
 
+#### Figure a. Proportion of Annual Members and Casual Riders
+
+![Figure a.](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/user_ratio.png)
 
 
 
