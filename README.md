@@ -83,11 +83,15 @@ Next, we can take a look at the rider distribution by month, from July 2021 to J
 * Number of users drastically decrease during winter (Dec-Feb) and the proportion of annual members relatively increase compared to casual users.
 * Number of users gradually start increasing in March, and peaks in summer and early fall (June-Sep) with the mode of month being July, followed by August. This could be due to the warm weather and vacation season. 
 
-Below is a preview of the dashboard I created. The interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values.
+Finally, we would like to present a dashboard we created. Below is a preview of the dashboard, and the interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values.
 
 ![Dashboard Preview](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/dashboard.png)
 
 ### VI. Summary of Analysis
+
+* There are more casual riders than annual members during the weekends (Sat-Sun) and summer (Jul-Aug).
+* Annual members use bikes more during the weekdays.
+* On average, casual riders travel longer (time) and further (distance) than annual members.
 
 ### VII. Recommendations
 
@@ -100,5 +104,8 @@ follow-up survey
 #### VII-iii. Recommendation no.3
 
 ### Limitations of the Analysis
+
+
+
 
 
