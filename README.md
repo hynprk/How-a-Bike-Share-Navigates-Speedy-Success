@@ -44,7 +44,7 @@ Ride ID | Bike type | Started | Ended | Start Station | Start Station ID | End S
 To prepare for our analysis, we created four new variables:
 
 * `travel_time`: Total travel time per ride (in seconds); Calculated by `difftime(ended_at, started_at)`
-* `weekday`: Weekday of the ride (Mon-Sun)
+* `day_of_week`: Day of a week of the ride (Mon-Sun)
 * `started_date_only`: extracted start date from `started_at` without specific time (yyyy-mm-dd format)
 * `travel_dist`: total distance traveled for a ride (in kilometres); Calculated by `distGeo(cbind(start_lng, start_lat), cbind(end_lng, end_lat))/1000` 
 
@@ -66,7 +66,7 @@ We notice that:
 * Annual members use the bikes 14% more on average than casual riders. 
 * On the other hand, casual riders spend 30% more time and travel 4% further than annual members, on average.
 
-Moving forward, we will take a look at the distribution of users per weekday, as shown in Figure 1.
+Moving forward, we will take a look at the distribution of users per day of week, as shown in Figure 1.
 
 ![Figure 1](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig1.jpeg)
 
@@ -92,6 +92,7 @@ Finally, we would like to present a dashboard we created. Below is a preview of 
 * There are more casual riders than annual members during the weekends (Sat-Sun) and summer (Jul-Aug).
 * Annual members use bikes more during the weekdays.
 * On average, casual riders travel longer (time) and further (distance) than annual members.
+* Both casual and annual riders use classic bikes more than docked or electric bikes.
 
 ### VII. Recommendations
 
