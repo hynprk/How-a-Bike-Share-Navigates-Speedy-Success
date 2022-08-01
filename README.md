@@ -6,7 +6,7 @@
 **Cyclistic** is a hypothetical bike-share company in Chicago founded in 2016, featuring 5,800 bicycles and 600 docking stations. To foster inclusivity for diverse groups of customers, Cyclistic not only offers conventional two-wheeled bicycles, but also hand tricycles, reclining bicycles, and cargo bicycles. According to Cyclistic's bike trip data, approximately 30% of the bike-share users use the bikes to commute to work. 
 
 <p align="center">
-  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/images/bikeshareinchicago.jpg">
+  <img src="https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/images/bikeshareinchicago.jpg"></b><br>
   <a href="https://connect.bcbsil.com/health-and-wellness/b/weblog/posts/on-a-roll-bike-share-programs-expand-across-the-country">Image Source</a>
 </p>
 
