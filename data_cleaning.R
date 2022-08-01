@@ -4,6 +4,7 @@
 library(tidyverse) # for data wrangling, data vis, etc.
 library(lubridate) # for dates
 library(geosphere) # for distance
+library(knitr)     # for kable 
 
 
 ## Import Data ##
@@ -13,6 +14,9 @@ bikeshare <- list.files(path="data", full.names = T) %>%
   lapply(read_csv) %>% 
   bind_rows()
 
+# Check number of NA values in each columns
+# approximately 20.7% had NA values
+lapply(bikeshare, function(x){sum(is.na(x))}) %>% as.tibble() %>% kable()
 
 ## Data Wrangling ##
 # Creating new variables:
@@ -22,34 +26,25 @@ bikeshare <- list.files(path="data", full.names = T) %>%
 # `travel_dist`: total distance traveled for a ride
 bikeshare <- bikeshare %>% 
   mutate(started_date_only = as.Date(started_at),
-         weekday = weekdays(started_at),
-         travel_time = seconds_to_period(ended_at - started_at), # in minutes
+         day_of_week = weekdays(started_at),
+         travel_time = difftime(ended_at, started_at), # in minutes
          travel_dist = distGeo(cbind(start_lng, start_lat), 
-                               cbind(end_lng, end_lat))/1000) # in kilometers
+                               cbind(end_lng, end_lat))/1000) %>% # in kilometers
+  filter(!is.na(travel_dist))
+
+# Random sample 
+set.seed(408)
+bikeshare_samp <- bikeshare[sample(nrow(bikeshare), size = nrow(bikeshare)*0.7), ]
+
 
 # New data set: Number of travels per day
-num_travels <- bikeshare %>% group_by(started_date_only, member_casual) %>% 
-  summarize(num = n()) %>% as_tibble() # Number of travels per day by rider type stored
-# Average number of travels
-num_travels %>% group_by(member_casual) %>% summarize(mean = mean(num))
+daily_travels <- bikeshare_samp %>% group_by(started_date_only, member_casual) %>% 
+  summarize(num = n(), avg_time = mean(travel_time), avg_dist = mean(travel_dist)) %>%
+  as_tibble() # Number of travels per day by rider type stored
+
 
 
 ## Export into csv file ##
-write.csv(bikeshare, "bikeshare.csv")
+write.csv(bikeshare_samp, "data/bikeshare_samp.csv")
+write.csv(daily_travels, "data/daily_travels.csv")
 
-
-
-
-
-## How are casual riders different from annual members? ##
-### Time of the year they ride the bike
-
-### Weekday they ride the bike
-
-### Rideable type
-bikeshare %>% group_by(member_casual, rideable_type) %>% 
-  summarize(n = n())
-
-### How long they ride the bike
-
-### How far they ride the bike
