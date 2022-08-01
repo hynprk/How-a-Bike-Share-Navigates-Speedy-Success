@@ -121,6 +121,8 @@ According to Figure 1, we have seen that the proportion of annual members are gr
 
 A company with a good purpose will captivate more customers. Using Cyclistic's social media accounts and bike-share stations, we can promote the benefits of bike-share. The bike stations for advertising this campaign can be chosen based on the number of parks around stations, number of casual riders per station, or the top 10 start stations we have seen in Figure 4. The benefits of bike-share would majorly include protecting our planet by reducing gas emissions or less air pollution from cars and developing a healthier life style. Conjoining the two ideas, we can promote a campaign for saving the earth. This includes hosting an event of picking up trash on the streets while riding Cyclistic's bikes, or planting a tree for every certain number of posts with Cyclistic's bike-share on social media. During events, participants will be asked to fill out optional surveys regarding bike-share and the campaign, which would allow them to enter in raffles for environment-friendly prizes. This could potentially increase the number of new annual subscribers.
 
+![bike](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/bike.png)
+
 ### VIII. Limitations and Next Steps
 
 ### IX. Appendix
