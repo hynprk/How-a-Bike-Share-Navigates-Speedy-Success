@@ -33,9 +33,9 @@ library(knitr)     # for kable
 
 After unzipping the data of twelve most recent months from [here](https://divvy-tripdata.s3.amazonaws.com/index.html), we aggregated them into one single dataframe and stored it into `bikeshare`. At this stage, we notice that there are several missing values, i.e., NA, within the aggregated data, as shown in Table 1 below. Missing values are not an issue for station names since we are not planning to incorporate specific station names into our analysis; however, missing latitudes and longitudes can rise problems when we calculate the total distance traveled per ride. Hence, we will omit the 5,374 rows from our analysis with missing end latitudes and longitudes.
 
-<p align="center">
+
 Table 1: Missing Values for Each Column
-</p>
+
 
 Ride ID | Bike type | Started | Ended | Start Station | Start Station ID | End Station | End Station ID | Start Latitude | Start Longitude | End Latitude | End Longitude | Member or Casual 
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |--- |---
@@ -44,23 +44,56 @@ Ride ID | Bike type | Started | Ended | Start Station | Start Station ID | End S
 To prepare for our analysis, we created four new variables:
 
 * `travel_time`: Total travel time per ride (in seconds); Calculated by `difftime(ended_at, started_at)`
-* `weekday`: The weekday of the ride (Mon-Sun)
+* `weekday`: Weekday of the ride (Mon-Sun)
 * `started_date_only`: extracted start date from `started_at` without specific time (yyyy-mm-dd format)
 * `travel_dist`: total distance traveled for a ride (in kilometres); Calculated by `distGeo(cbind(start_lng, start_lat), cbind(end_lng, end_lat))/1000` 
 
-For the sake of time efficiency, we randomly sampled 70% of the population by using the `sample()` function. This ensures sampling bias does not take place in our analysis and we can safely make inferences for the population from our results. 
+For the sake of time efficiency, we randomly sampled 70% of the population by using the `sample()` function. This ensures sampling bias does not take place in our analysis and we can safely make inferences for the population from our results. Please make sure to set.seed(##your favourite number##) so that the sample does not change every time you run the code.
 
-### V. Summary of Analysis
+### V. Data Visualizations and Key Findings
 
-### VI. Data Visualizations and Key Findings
+Recall that our business task is to identify the differences between casual riders and annual members and make data-driven recommendations. Based on our objective, we can first calculate the average daily percentage of number, time, and distance of travels for the two customer groups, as shown in Table 2.
+
+Table 2: Average Daily Percentage for Casual Riders and Annual Members
+
+Rider Type | Number of Travels | Time Spent | Distance Traveled
+--- | --- | --- | ---
+Casual | 43% | 65% | 52%
+Member | 57% | 35% | 48%
+
+We notice that:
+
+* Annual members use the bikes 14% more on average than casual riders. 
+* On the other hand, casual riders spend 30% more time and travel 4% further than annual members, on average.
+
+Moving forward, we will take a look at the distribution of users per weekday, as shown in Figure 1.
+
+![Figure 1](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig1.jpeg)
+
+We observe that:
+
+* There are more annual members during the weekdays (Mon-Fri), which could potentially be related to commuting to work/school, etc.
+* There are more casual riders over the weekends (Sat-Sun)
+* Saturday has the maximum number of bike-share users (i.e., mode), followed by Sunday
+
+![Figure 2](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig2.jpeg)
+
+Next, we can take a look at the rider distribution by month, from July 2021 to June 2022.
+
+* Number of users drastically decrease during winter (Dec-Feb) and the proportion of annual members relatively increase compared to casual users.
+* Number of users gradually start increasing in March, and peaks in summer and early fall (June-Sep) with the mode of month being July, followed by August. This could be due to the warm weather and vacation season. 
 
 Below is a preview of the dashboard I created. The interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values.
 
-![Dashboard Preview](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/dashboard.png)
+![Dashboard Preview](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/dashboard.png)
+
+### VI. Summary of Analysis
 
 ### VII. Recommendations
 
 #### VII-i. Recommendation no.1
+
+follow-up survey
 
 #### VII-ii. Recommendation no.2
 
