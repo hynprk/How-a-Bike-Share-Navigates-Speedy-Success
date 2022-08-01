@@ -87,9 +87,9 @@ When comparing the types of bicycles used between casual users and annual member
 
 ![Figure 3](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig3.jpeg)
 
-Then, another data we want to take a look at is the Top 10 start stations used by all riders. According to Figure 4, Streeter Dr Grand Ave has the highest number of users, where approximately 79% of them are casual riders.
+Then, another data we want to take a look at is the Top 10 start stations used by all riders. According to Figure 4, Streeter Dr & Grand Ave has the highest number of users, where approximately 79% of them are casual riders. Having various sight seeing locations and a lot of parks nearby Streeter Dr & Grand Ave, such as Milton Lee Olive Park, Lake View Park, Maggie Daley Park, and Millennium Park could be the reason for this. 
 
-![Figure 4](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/station.png)
+![Figure 4](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/fig4.png)
 
 Finally, we would like to present a dashboard we created. Below is a preview of the dashboard, and the interactive version can be viewed [here](https://public.tableau.com/app/profile/hyoeunpark99/viz/Annualmembersvs_CasualridersinBikeShare/DifferencebetweenBike-ShareofAnnualmembersandCasualriders_1) (Right click to view in a new tab). You can hover over the graphs, click on graphs, or use the filter on the bottom-right to see any specific values. 
 
@@ -101,27 +101,29 @@ Finally, we would like to present a dashboard we created. Below is a preview of 
 * Annual members use bikes more during the weekdays.
 * On average, casual riders travel longer (time) and further (distance) than annual members.
 * Both casual and annual riders use classic bikes more than docked or electric bikes.
-* Streeter Dr Grand Ave has the highest number of users, where approximately 79% are casual riders.
+* Streeter Dr & Grand Ave has the highest number of users, where approximately 79% are casual riders.
 
 ### VII. Recommendations
 
-#### VII-i. Recommendation no.1
+#### VII-i. Recommendation 1: Exclusive Promotions during the Summer 🌞😎🍦
+
+We have clearly seen from Figure 2 and the line graph from the dashboard that users, especially casual riders, drastically increase during the summer. The season would be a great opportunity to promote annual subscriptions via Instagram, Facebook, Tik Tok, or Google Maps with irresistible digital food coupons, like ice-creams or fresh drinks from a fast-food restaurant. This would require Cyclistic to partner with the restaurant. However, note that this could potentially cause an increase in environmental pollution from disposable products. 
+
+Considering the fact that tourists increase during the summer and that there are various tourist attractions (e.g., parks, museums, universities, beaches, harbours) around the most popular start station, Streeter Dr & Grand Ave, we can offer summer coupons affiliated with such attractions as an alternative. Moreover, a digital map with various tourist attractions and bike stations nearby would help the potential bike users understand that these attractions can be visited with bicycles. This digital map can be accessible through Cyclistic's social media or QR codes at every station to decrease the amount of physical copies. Although tourists might have a lower chance of subscribing as an annual member, promoting such ideas would still increase the chance of them using Cyclistic's bikes, and hence increase the revenue of Cyclistic.
+
+#### VII-ii. Recommendation 2: You are the Lucky Winner!
+
 
 annual subscription and follow-up survey -> draw
 
-promote with food coupons exclusive for summer
 
-offer exclusive discounts for weekends
-
-have certain numbers of casual bike share cost more than one annual purchase (can have risk)
+#### VII-iii. Recommendation 3: Promote
 
 promote campaign for preserving the environment around the top 10 stations
 
 if tight on budget, only the stations with lots of casual riders
 
-#### VII-ii. Recommendation no.2
-
-#### VII-iii. Recommendation no.3
+discounts for weekday
 
 ### Limitations of the Analysis
 
