@@ -26,16 +26,18 @@ weekday_plot + scale_fill_brewer(palette = "Dark2", name= " ")
 month_order <- c("July", "August", "September", "October", 
                  "November", "December", "January", "February", 
                  "March", "April", "May", "June")
-bikeshare_samp %>% 
+month_plot <- bikeshare_samp %>% 
   ggplot(aes(x = factor(months(started_at), level = month_order),
              fill = member_casual)) + 
   geom_bar() + 
   theme_minimal() +
   theme(axis.text.x  = element_text(angle = 45)) +
-  labs(title = "Bike shares per month",
-       subtitle = "2021/07 - 2022/06",
+  labs(title = "Bike-Share Users per Month",
+       subtitle = "Period: 2021/07 - 2022/06",
        x = "Month",
-       y = "Count")
+       y = "Count", 
+       caption = "Figure 2")
+month_plot + scale_fill_brewer(palette = "Dark2", name= " ")
 ## Observations:
 ### 1. Riders drastically decrease during winter
 ### - However, there are proportionally more annual members than casual users
@@ -43,8 +45,23 @@ bikeshare_samp %>%
 ### 2. A lot of riders during summer
 
 ### Rideable type
-bikeshare %>% group_by(member_casual, rideable_type) %>% 
-  summarize(n = n()/nrow(bikeshare))
+ride_type <- bikeshare_samp %>% ggplot(aes(x = member_casual, fill = rideable_type)) + 
+  geom_bar() +
+  theme_minimal() +
+  labs(title = "Types of Bicycles Used",
+       subtitle = "Period: 2021/07 - 2022/06",
+       x = "Type of Rider",
+       y = "Count",
+       caption = "Figure 3")
+ride_type + scale_fill_brewer(palette = "Set1", name = " ",
+                              labels = c("Classic bike",
+                                         "Docked bike",
+                                         "Electric bike")) +
+  scale_x_discrete(labels = c("Casual", "Member"))
+## Observations:
+### 1. Only casual riders use docked bikes
+### 2. Both casual and annual riders use classic bikes more than electric bikes, 
+### although the difference is subtle within casual riders
 
 ### How long they ride the bike
 
