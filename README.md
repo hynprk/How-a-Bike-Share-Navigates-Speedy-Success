@@ -125,7 +125,7 @@ A company with a good purpose will captivate more customers. Using Cyclistic's s
 
 ### IX. Appendix
 
-#### X. Figure a. Proportion of Annual Members and Casual Riders
+#### IX-i. Figure a: Proportion of Annual Members and Casual Riders
 
 ![Figure a.](https://github.com/hynprk/How-a-Bike-Share-Navigates-Speedy-Success/blob/main/data_vis/user_ratio.png)
 
